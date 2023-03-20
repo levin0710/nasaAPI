@@ -1,5 +1,5 @@
 import './Gallery.css'
-const Gallery = ({ images }) => {
+const Gallery = ({ images, descriptions }) => {
 
     return (
       <div className="history-bar">
@@ -16,8 +16,10 @@ const Gallery = ({ images }) => {
                       width="150"
                       height="100"
                     />
+                    <p>{descriptions[index].substring(0, descriptions[index].indexOf(".") + 1)}</p>
                   </li>
-                ) 
+                )
+                 
               )
           ) : (
               <div>

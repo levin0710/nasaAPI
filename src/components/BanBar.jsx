@@ -7,12 +7,12 @@ const BanBar = ({ banned, unbanItem}) => {
         <h4>Select dates that you want to ban</h4>
         {banned && banned.length > 0 ? (
             banned.map((ban, index) => (
-                <button className='banned-button'>{ban}</button>
+                <button onClick={() => unbanItem(index)} className='banned-button'>{ban}</button>
               ) 
             )
         ) : (
             <div>
-            <h3>You haven't made a screenshot yet!</h3>
+            <h3>You haven't banned anything yet!</h3>
             </div>
         )}  
       </div>
