@@ -4,6 +4,9 @@
   padding: 2rem;
   text-align: center;
 }
+div{
+  display: block;
+}
 
 .screenshot {
   width: 500px;
@@ -40,5 +43,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(49,49,49,1);
+  background: #212121;
+}
+
+
+.to-ban {
+  margin: 5px 0;
+  background-color: #FC3D21;
+  box-shadow: 0 3px #0B3D91;
 }
